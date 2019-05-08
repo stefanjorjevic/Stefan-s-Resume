@@ -350,9 +350,11 @@ link-item, img {
       grid-template-columns: 1fr 1fr;
     }
   
-    .interests-container {
+   .interests-container {
       flex-wrap: wrap;
-      justify-content: flex-start;
+      display: grid;
+      grid-template-columns: 30% 30% 30%;
+      grid-column-gap: 1m;  
     }
   
     .interests-container img {
