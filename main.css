@@ -1,0 +1,362 @@
+html {
+    box-sizing: border-box;
+}
+*,*:before, :after {
+box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.5;
+    background: #f2f2f2;
+    color: #323232;
+    
+
+}
+
+img {
+    max-width: 100%;
+
+}
+
+.icon {
+    fill: currentColor;
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+
+}
+
+a {
+    color: #323232;
+    text-decoration: none;
+
+}
+
+
+.container {
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 32px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 20px;
+    padding: 24px 0;
+    border-bottom: 1px solid lightgray;
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+section-title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/******************************
+*          Main Info
+*******************************/
+
+img.avatar {
+    width: 130px;
+    border-radius: 100%;
+   
+}
+
+.my-name {
+    font-size: 48px;
+    line-height: 1;
+}
+
+.my-title {
+font-size: 24px;
+font-weight: 300;
+color: #236fb2; 
+}
+
+.links {
+    display: flex;
+    margin: 10px 0 20px 0;
+
+}
+
+.link-item {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+link-item, img {
+    margin-right: 6px;
+}
+
+/******************************
+*          Experience
+*******************************/
+
+.job {
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid lightgray;
+}
+
+.job:last-child {
+    border-bottom: none;
+}
+
+.job-title-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.job-company {
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+/******************************
+*          Skills
+*******************************/
+
+.skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20;
+    margin-bottom: 24px;
+}
+
+.skills-container ul {
+    margin-left: 20px;
+    list-style-type: disc;  
+}
+
+.legend {
+  height: auto;
+  width: auto;
+  background-color: #bbb;
+  border-radius: 10%;
+  display: inline-block;
+  
+}
+
+#beginner {
+  background: lightblue;
+  color: black;
+  text-align: center;
+  }
+
+#intermediate {
+  background: greenyellow;
+  color: black;
+  text-align: center;
+  
+  }
+
+#proficient {
+  background: yellow;
+  color: black;
+  text-align: center;
+  
+  }
+
+#advanced {
+  background: red;
+  color: black;
+  text-align: center;
+  }  
+
+.underline{
+  position: relative;
+}
+
+.underline:after{
+  content: '';
+  position: absolute;
+  width: 0; height: 2px;
+  display: block;
+  margin-top: 1,5px;
+  right: 1;
+  background: linear-gradient(to right, rgb(58, 58, 58), lightgray);
+  transition: width .2s ease;
+  -webkit-transition: width .4s ease;
+}
+
+.underline:hover:after{
+  width: 100%;
+  left: 0;
+  background: linear-gradient(to right, lightblue 50%, lightgreen,yellow,red);
+};
+
+
+.underline#html5:hover:after{
+  width: 100%;
+  left: 0;
+  background: linear-gradient(to right, lightblue, lightgreen,yellow,red);
+}
+/* first row */
+
+.underline#css3:hover:after{
+  width: 100%;
+  left: 0;
+  background: linear-gradient(to right, lightblue , lightgreen ,yellow 50%,red);
+}
+
+.underline#javascript:hover:after{
+  width: 100%;
+  left: 0;
+  background: linear-gradient(to right, lightblue 70%, lightgreen,yellow,red);
+}
+
+.underline#english:hover:after{
+  width: 100%;
+  left: 0;
+  background: linear-gradient(to right, lightblue, lightgreen,yellow ,red 50%)
+}
+
+/* second row */
+
+.underline#creative:hover:after{
+  width: 100%;
+  left: 0;
+  background: linear-gradient(to right, lightblue , lightgreen,yellow,red 50%);
+}
+
+.underline#teamplayer:hover:after{
+  width: 100%;
+  left: 0;
+  background: linear-gradient(to right, lightblue , lightgreen,yellow,red 50%);
+}
+
+.underline#communicative:hover:after{
+  width: 100%;
+  left: 0;
+  background: linear-gradient(to right, lightblue , lightgreen,yellow,red 50%);
+}
+
+.underline#wellorganized:hover:after{
+  width: 100%;
+  left: 0;
+  background: linear-gradient(to right, lightblue , lightgreen,yellow,red 50%);
+}
+
+
+/* third row */
+
+.underline#office:hover:after{
+  width: 100%;
+  left: 0;
+  background: linear-gradient(to right, lightblue , lightgreen,yellow 50%,red );
+}
+
+.underline#windows:hover:after{
+  width: 100%;
+  left: 0;
+  background: linear-gradient(to right, lightblue , lightgreen,yellow 50%,red );
+}
+
+.underline#linux:hover:after{
+  width: 100%;
+  left: 0;
+  background: linear-gradient(to right, lightblue , lightgreen 50%,yellow ,red );
+}
+
+.underline#mac:hover:after{
+  width: 100%;
+  left: 0;
+  background: linear-gradient(to right, lightblue 50%, lightgreen,yellow ,red );
+}
+
+/* fourth row legend user manual */
+
+
+/******************************
+*          Interests
+*******************************/
+
+.interests-container {
+    display: flex ;
+    justify-content: space-between;
+}
+.interests-container img {
+    height: 45px;
+    opacity: 0.30;
+    margin-right: 6px;
+    transition: 2.5s;
+}
+
+.interests-container img:hover {
+    height: 45px;
+    opacity: 0.99;
+    margin-right: 6px;
+    transition: 0.5s;
+    -webkit-transform: rotateZ(360deg);
+      -moz-transform: rotateZ(360deg);
+      transform: rotateZ(360deg);
+}
+
+/*********************************************
+ *        Popup interests information
+**********************************************/
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: green;
+  opacity: 0.75;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  
+}
+
+/*********************************
+*        Responsive 
+*********************************/
+/* 768px */
+
+@media only screen and (max-width : 768px) {
+    section {
+      grid-template-columns: 1fr;
+    }
+  
+    .links, .job-title-container {
+      flex-direction: column;
+    }
+  
+    .skills-container {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .interests-container {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+  
+    .interests-container img {
+      margin-right: 32px;
+      margin-bottom: 16px;
+    }
+  }
