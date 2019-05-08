@@ -354,7 +354,7 @@ link-item, img {
       flex-wrap: wrap;
       display: grid;
       grid-template-columns: 30% 30% 30%;
-      grid-column-gap: 1m;  
+      grid-column-gap: 1em;  
     }
   
     .interests-container img {
