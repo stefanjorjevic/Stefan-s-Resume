@@ -141,7 +141,7 @@ link-item, img {
 
 .legend {
   height: auto;
-  width: auto;
+  width: aito;
   background-color: #bbb;
   border-radius: 10%;
   display: inline-block;
@@ -152,12 +152,14 @@ link-item, img {
   background: lightblue;
   color: black;
   text-align: center;
+  font-size: 0.8em;
   }
 
 #intermediate {
   background: greenyellow;
   color: black;
   text-align: center;
+  font-size: 0.8em;
   
   }
 
@@ -165,14 +167,17 @@ link-item, img {
   background: yellow;
   color: black;
   text-align: center;
+  font-size: 0.8em;
   
   }
 
 #advanced {
-  background: red;
+  background: rgba(255, 0, 0, 0.397);
   color: black;
   text-align: center;
+  font-size: 0.8em;
   }  
+  
 
 .underline{
   position: relative;
@@ -181,71 +186,88 @@ link-item, img {
 .underline:after{
   content: '';
   position: absolute;
-  width: 0; height: 2px;
+  width: 0; height: 3px;
   display: block;
   margin-top: 1,5px;
   right: 1;
-  background: linear-gradient(to right, rgb(58, 58, 58), lightgray);
+  background: linear-gradient(to right, rgb(58, 58, 58), lightgray 50%);
   transition: width .2s ease;
   -webkit-transition: width .4s ease;
 }
 
 .underline:hover:after{
   width: 100%;
-  left: 0;
-  background: linear-gradient(to right, lightblue 50%, lightgreen,yellow,red);
-};
+  left : 0;
+  background : linear-gradient(to right, blue, lightgreen ,red,yellow);
+}
 
+/* first row */
 
 .underline#html5:hover:after{
   width: 100%;
   left: 0;
-  background: linear-gradient(to right, lightblue, lightgreen,yellow,red);
+  background: linear-gradient(to right,blue , rgb(0, 255, 0) 90% );
 }
-/* first row */
+
 
 .underline#css3:hover:after{
   width: 100%;
   left: 0;
-  background: linear-gradient(to right, lightblue , lightgreen ,yellow 50%,red);
+  background: linear-gradient(to right,  rgb(0, 255, 0) 99%,red);
 }
 
 .underline#javascript:hover:after{
   width: 100%;
   left: 0;
-  background: linear-gradient(to right, lightblue 70%, lightgreen,yellow,red);
+  background: linear-gradient(to right,rgb(0, 60, 255) 85%,rgb(0, 255, 0) );
 }
+
+.underline#sql-mysql:hover:after{
+  width: 100%;
+  left: 0;
+  background: linear-gradient(to right,rgb(0, 60, 255)70%, rgb(0, 255, 0) )
+}
+
+.underline#java:hover:after{
+  width: 100%;
+  left: 0;
+  background: linear-gradient(to right,rgb(0, 60, 255) 70%, rgb(0, 255, 0))
+}
+
+
+
+
+/* second row */
 
 .underline#english:hover:after{
   width: 100%;
   left: 0;
-  background: linear-gradient(to right, lightblue, lightgreen,yellow ,red 50%)
+  background: linear-gradient(to right, red,yellow )
 }
 
-/* second row */
 
 .underline#creative:hover:after{
   width: 100%;
   left: 0;
-  background: linear-gradient(to right, lightblue , lightgreen,yellow,red 50%);
+  background: linear-gradient(to right, red,yellow 80%);
 }
 
 .underline#teamplayer:hover:after{
   width: 100%;
   left: 0;
-  background: linear-gradient(to right, lightblue , lightgreen,yellow,red 50%);
+  background: linear-gradient(to right,  red,yellow );
 }
 
 .underline#communicative:hover:after{
   width: 100%;
   left: 0;
-  background: linear-gradient(to right, lightblue , lightgreen,yellow,red 50%);
+  background: linear-gradient(to right, red ,yellow);
 }
 
 .underline#wellorganized:hover:after{
   width: 100%;
   left: 0;
-  background: linear-gradient(to right, lightblue , lightgreen,yellow,red 50%);
+  background: linear-gradient(to right, red ,yellow);
 }
 
 
@@ -254,25 +276,25 @@ link-item, img {
 .underline#office:hover:after{
   width: 100%;
   left: 0;
-  background: linear-gradient(to right, lightblue , lightgreen,yellow 50%,red );
+  background: linear-gradient(to right ,green,red,yellow  );
 }
 
 .underline#windows:hover:after{
   width: 100%;
   left: 0;
-  background: linear-gradient(to right, lightblue , lightgreen,yellow 50%,red );
+  background: linear-gradient(to right,red,yellow);
 }
 
 .underline#linux:hover:after{
   width: 100%;
   left: 0;
-  background: linear-gradient(to right, lightblue , lightgreen 50%,yellow ,red );
+  background: linear-gradient(to right,  lightgreen ,red );
 }
 
 .underline#mac:hover:after{
   width: 100%;
   left: 0;
-  background: linear-gradient(to right, lightblue 50%, lightgreen,yellow ,red );
+  background: linear-gradient(to right,  lightgreen,red );
 }
 
 /* fourth row legend user manual */
@@ -285,12 +307,15 @@ link-item, img {
 .interests-container {
     display: flex ;
     justify-content: space-between;
+    
 }
+
 .interests-container img {
     height: 45px;
     opacity: 0.30;
     margin-right: 6px;
     transition: 2.5s;
+    
 }
 
 .interests-container img:hover {
@@ -350,7 +375,7 @@ link-item, img {
       grid-template-columns: 1fr 1fr;
     }
   
-   .interests-container {
+    .interests-container {
       flex-wrap: wrap;
       display: grid;
       grid-template-columns: 30% 30% 30%;
